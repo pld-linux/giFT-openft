@@ -33,7 +33,6 @@ sieci OpenFT.
 %setup -q -n %{sname}-%{version}
 
 %build
-rm -f missing
 %{__libtoolize}
 %{__aclocal} -I m4
 %{__autoconf}
@@ -49,8 +48,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 %ifarch amd64
-    install -d $RPM_BUILD_ROOT/%{_libdir}
-    mv $RPM_BUILD_ROOT/usr/lib/* $RPM_BUILD_ROOT/%{_libdir}
+install -d $RPM_BUILD_ROOT%{_libdir}
+mv $RPM_BUILD_ROOT%{_prefix}/lib/* $RPM_BUILD_ROOT%{_libdir}
 %endif
 
 %clean
