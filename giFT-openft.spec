@@ -48,6 +48,11 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+%ifarch amd64
+    install -d $RPM_BUILD_ROOT/%{_libdir}
+    mv $RPM_BUILD_ROOT/usr/lib/* $RPM_BUILD_ROOT/%{_libdir}
+%endif
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
