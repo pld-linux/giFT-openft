@@ -14,7 +14,7 @@ URL:		http://giFT.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	db-devel
-BuildRequires:	giFT-devel >= 0.11.3
+BuildRequires:	giFT-devel >= 0.11.4
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	zlib-devel
