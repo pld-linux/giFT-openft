@@ -4,17 +4,18 @@
 Summary:	The generic interface to FastTrack: OpenFT plugin
 Summary(pl):	Interfejs do FastTracka: wtyczka OpenFT
 Name:		giFT-openft
-Version:	0.2.1.1
+Version:	0.2.1.2
 Release:	1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/gift/%{sname}-%{version}.tar.bz2
-# Source0-md5:	5915133a92cfd42e1841a0474fa7001f
+# Source0-md5:	18f9f084dd9f866b16c7ebded269989d
 URL:		http://giFT.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	db-devel
 BuildRequires:	giFT-devel >= 0.11.4
+BuildRequires:	libmagic-devel
 BuildRequires:	libtool
 BuildRequires:	pkgconfig
 BuildRequires:	zlib-devel
