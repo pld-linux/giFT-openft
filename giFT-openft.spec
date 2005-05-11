@@ -47,7 +47,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%ifarch amd64
+%if "%{_libdir}" != "%{_prefix}/lib"
 install -d $RPM_BUILD_ROOT%{_libdir}
 mv $RPM_BUILD_ROOT%{_prefix}/lib/* $RPM_BUILD_ROOT%{_libdir}
 %endif
