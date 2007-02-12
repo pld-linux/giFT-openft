@@ -2,7 +2,7 @@
 %define		sname	gift-openft
 
 Summary:	The generic interface to FastTrack: OpenFT plugin
-Summary(pl):	Interfejs do FastTracka: wtyczka OpenFT
+Summary(pl.UTF-8):   Interfejs do FastTracka: wtyczka OpenFT
 Name:		giFT-openft
 Version:	0.2.1.5
 Release:	2
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 The generic interface to FastTrack network. This package contains
 OpenFT plugin.
 
-%description -l pl
-Ogólny interfejs do sieci FastTrack. Ten pakiet zawiera wtyczkê dla
+%description -l pl.UTF-8
+OgÃ³lny interfejs do sieci FastTrack. Ten pakiet zawiera wtyczkÄ™ dla
 sieci OpenFT.
 
 %prep
