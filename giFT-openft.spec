@@ -2,7 +2,7 @@
 %define		sname	gift-openft
 
 Summary:	The generic interface to FastTrack: OpenFT plugin
-Summary(pl.UTF-8):   Interfejs do FastTracka: wtyczka OpenFT
+Summary(pl.UTF-8):	Interfejs do FastTracka: wtyczka OpenFT
 Name:		giFT-openft
 Version:	0.2.1.5
 Release:	2
